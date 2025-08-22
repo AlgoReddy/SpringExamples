@@ -5,6 +5,8 @@ import com.deviro.maven.services.ColourPrinter;
 import com.deviro.maven.services.GreenPrinter;
 import com.deviro.maven.services.RedPrinter;
 
+// here we are creating a new objects using the traditional methods without using the beans
+
 public class ColourPrinterImpl implements ColourPrinter {
   private RedPrinter redPrinter;
   private BluePrinter bluePrinter;
