@@ -10,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @Log
 public class ColoursApplication implements CommandLineRunner {
+  private ColourPrinter colourPrinter;
 
   public static void main(String[] args) {
     SpringApplication.run(ColoursApplication.class, args);
