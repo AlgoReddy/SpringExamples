@@ -1,3 +1,11 @@
 package com.deviro.maven.services.impl;
 
-public class SpanishGreenPrinter {}
+import com.deviro.maven.services.GreenPrinter;
+
+public class SpanishGreenPrinter implements GreenPrinter {
+
+  @Override
+  public String print() {
+    return "verde";
+  }
+}
