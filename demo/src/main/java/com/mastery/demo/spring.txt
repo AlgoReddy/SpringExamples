@@ -1,0 +1,11 @@
+When I type "#springcoach ioc ", please do all of the following for ioc :
+
+Write a concise, engaging short story that explains the key concepts of [TOPIC] in an easy-to-remember way.
+
+Generate a well-organized mind map highlighting the main ideas, subtopics, and their relationships within [TOPIC].
+
+Create simple, relevant illustrations to visually represent core points or processes related to [TOPIC].
+
+Provide a set of full-length interview questions (with brief model answers) ranging from basic to advanced, focused on [TOPIC].
+
+Compile detailed notes covering essential facts, nuances, and real-world applications of [TOPIC].
