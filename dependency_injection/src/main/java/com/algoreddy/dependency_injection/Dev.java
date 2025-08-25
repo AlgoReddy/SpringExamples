@@ -9,7 +9,7 @@ public class Dev {
     // our duty to handle it
     // private Laptop laptop = new Laptop();
     @Autowired // field injection
-    private Laptop laptop;
+    private Computer comp;
     // constructor injection which don't require the @autowired annotation
     // public Dev(Laptop laptop) {
     // this.laptop = laptop;
@@ -22,7 +22,7 @@ public class Dev {
     // }
 
     public void build() {
-        laptop.compile();
+        comp.compile();
         System.out.println("working is awesome ");
     }
 
