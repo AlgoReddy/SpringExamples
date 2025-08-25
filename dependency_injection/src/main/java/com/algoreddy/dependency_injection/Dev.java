@@ -1,6 +1,7 @@
 package com.algoreddy.dependency_injection;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -8,7 +9,9 @@ public class Dev {
     // we don't want to create a laptop object with the new keyword which makes it
     // our duty to handle it
     // private Laptop laptop = new Laptop();
-    @Autowired // field injection
+    @Autowired
+     // field injection
+     @Qualifier("desktop")
     private Computer comp;
     // constructor injection which don't require the @autowired annotation
     // public Dev(Laptop laptop) {
