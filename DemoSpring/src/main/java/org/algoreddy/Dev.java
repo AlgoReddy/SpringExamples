@@ -1,6 +1,8 @@
 package org.algoreddy;
 
 public class Dev {
+    private Computer comp;
+
     public Computer getComp() {
         return comp;
     }
@@ -9,29 +11,14 @@ public class Dev {
         this.comp = comp;
     }
 
-    private Computer comp;
-
-    public Dev(){
+    public Dev() {
         System.out.println("Dev constructor");
     }
 
-    public int getAge() {
-        return age;
+    public void build() {
+
+        System.out.println("working is awesome ");
+        comp.compile();
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-
-    private int age;
-
-        public void build() {
-
-            System.out.println("working is awesome ");
-            comp.compile();
-        }
-
-    }
-
-
+}
