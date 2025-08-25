@@ -1,4 +1,4 @@
-package com.algoreddy.webapplication;
+package com.algoreddy.webapplication.controllers;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
