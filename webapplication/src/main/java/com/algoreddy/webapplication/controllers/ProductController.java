@@ -1,15 +1,20 @@
 package com.algoreddy.webapplication.controllers;
 
-import java.security.Provider;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.algoreddy.webapplication.model.Product;
 import com.algoreddy.webapplication.service.ProductService;
-import com.algoreddy.webapplication.service.*;;;
+
+;;
 
 @RestController
 public class ProductController {
@@ -19,6 +24,26 @@ public class ProductController {
     @GetMapping("/products")
     public List<Product> getProducts() {
         return service.getProducts();
+    }
+
+    @GetMapping("/products/{prodID}")
+    public Product getProductById(@PathVariable int prodID) {
+        return service.getProductById(prodID);
+    }
+
+    @PostMapping("/products")
+    public void addProduct(@RequestBody Product prod) {
+        System.out.println(prod.toString());
+        service.addProduct(prod);
+    }
+    @PutMapping("/products")
+    public void updateProduct(@RequestBody Product prod){
+        service.updateProduct(prod);
+    }
+    @DeleteMapping("/products/{prodId}")
+    public void deleteProduct(@PathVariable int prodId){
+        service.deleteProduct(prodId);
+
     }
 
 }
