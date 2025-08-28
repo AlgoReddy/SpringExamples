@@ -1,4 +1,4 @@
-package com.devtiro.database;
+package com.algoreddy.database;
 
 import lombok.extern.java.Log;
 import org.springframework.boot.SpringApplication;

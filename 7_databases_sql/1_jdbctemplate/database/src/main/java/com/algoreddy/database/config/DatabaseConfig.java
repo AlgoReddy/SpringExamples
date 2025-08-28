@@ -1,4 +1,4 @@
-package com.devtiro.database.config;
+package com.algoreddy.database.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
